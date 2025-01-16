@@ -1,22 +1,22 @@
 'use client';
 
-import React, {FC} from 'react';
-import {ProductTitleAttribute} from "@components/atoms";
+import React, { FC } from 'react';
+import { ProductTitleAttribute } from '@components/atoms';
 
 type Props = {
-    name: string;
-}
+  name: string;
+};
 
 const Index: FC<Props> = (props) => {
-    const {name} = props;
-    return (
-        <>
-            <div>
-                <ProductTitleAttribute title="Marca"/>
-                <p className="text-clamp-16-24 font-bold uppercase">{name}</p>
-            </div>
-        </>
-    )
-}
+  const { name } = props;
+  return (
+    <>
+      <div>
+        <ProductTitleAttribute title="Marca" />
+        <p className="text-clamp-16-24 font-bold uppercase">{name}</p>
+      </div>
+    </>
+  );
+};
 
 export default Index;
